@@ -15,9 +15,6 @@ from userbot import (COUNT_MSG, CMD_HELP, BOTLOG, BOTLOG_CHATID,
 
 from userbot.events import register
 
-from userbot.modules.sql_helper.globals import gvarstatus, addgvar, delgvar
-from sqlalchemy.exc import IntegrityError
-
 # ========================= CONSTANTS ============================
 AFKSTR = [
         "I'm busy right now. Please talk in a bag and when I come back you can just give me the bag!",
