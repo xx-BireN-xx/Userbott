@@ -25,6 +25,7 @@ from wikipedia import summary
 from wikipedia.exceptions import DisambiguationError, PageError
 from urbandict import define
 from requests import get
+from googlesearch import search
 from google_images_download import google_images_download
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
@@ -169,14 +170,10 @@ async def gsearch(q_event):
             "/", "#", "@", "!"):
         match_ = q_event.pattern_match.group(1)
         match = quote_plus(match_)
-        result_ = await asyncsh(
-            f"gsearch {match}",
-            stdout=asyncsh_PIPE,
-            stderr=asyncsh_PIPE
-        )
-        stdout, stderr = await result_.communicate()
-        result = str(stdout.decode().strip()) \
-            + str(stderr.decode().strip())
+        result = ""
+        for i in search(match, stop=10):
+            result += i
+            result += "\n"
         await q_event.edit(
             "**Search Query:**\n`" + match_ + "`\n\n**Result:**\n" + result
         )
