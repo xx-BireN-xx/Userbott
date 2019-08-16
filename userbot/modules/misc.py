@@ -11,8 +11,36 @@ from random import randint
 from time import sleep
 import os
 import sys
+import asyncio
+import time
 from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP
 from userbot.events import register
+from asyncio import wait
+
+
+@register(outgoing=True, pattern="^.fp$")
+async def facepalm(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        await e.edit("🤦‍♂")
+
+@register(outgoing=True, pattern="^.gangsta$")
+async def whoizme(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        await e.edit("EVERyBOdy")
+        await asyncio.sleep(0.3)
+        await e.edit("iZ")
+        await asyncio.sleep(0.2)
+        await e.edit("GangSTur")
+        await asyncio.sleep(0.5)
+        await e.edit("UNtIL ")
+        await asyncio.sleep(0.2)
+        await e.edit("I")
+        await asyncio.sleep(0.3)
+        await e.edit("ArRivE")
+        await asyncio.sleep(0.3)
+        await e.edit("🔥")
+        await asyncio.sleep(0.3)
+        await e.edit("EVERyBOdy iZ GangSTur UNtIL I ArRivE 🔥")
 
 
 @register(outgoing=True, pattern="^.random")
@@ -81,12 +109,12 @@ async def bot_support(wannahelp):
 @register(outgoing=True, pattern="^.creator$")
 async def creator(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("[AvinashReddy3108](https://t.me/AvinashReddy3108)")
+        await e.edit("[noobvishal](https://t.me/noobvishal
 
 @register(outgoing=True, pattern="^.readme$")
 async def reedme(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("You might want to have a look at the [README.md](https://github.com/AvinashReddy3108/PaperplaneExtended/blob/master/README.md) file.")
+        await e.edit("You might want to have a look at the [README.md](https://github.com/noobvishal/Userbot/blob/sql-extended/README.md) file.")
 
 #
 # Copyright (c) Gegham Zakaryan | 2019
@@ -108,7 +136,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     if not wannasee.text[0].isalpha() and wannasee.text[0] not in ("/", "#", "@", "!"):
-        await wannasee.edit("Click [here](https://github.com/AvinashReddy3108/PaperplaneExtended) to open Paperplane Extended's GitHub page.")
+        await wannasee.edit("Click [Here](https://github.com/noobvishal/Userbot) To Open My Userbot's GitHub page.")
 
 CMD_HELP.update({
     'random': '.random <item1> <item2> ... <itemN>\
@@ -146,4 +174,10 @@ CMD_HELP.update({
 })
 CMD_HELP.update({
     "restart": "Restart the bot !!"
+})
+CMD_HELP.update({
+    "gangsta": "Show them who's the gansta"
+})
+CMD_HELP.update({
+    "fp": "Send a face palm emoji."
 })

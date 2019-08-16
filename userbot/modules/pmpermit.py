@@ -156,9 +156,9 @@ async def notifon(non_event):
         await non_event.edit("`Notifications from unapproved PM's unmuted!`")
 
 
-@register(outgoing=True, pattern="^.approve$")
+@register(outgoing=True, pattern="^.pm$")
 async def approvepm(apprvpm):
-    """ For .approve command, give someone the permissions to PM you. """
+    """ For .pm command, give someone the permissions to PM you. """
     if not apprvpm.text[0].isalpha() and apprvpm.text[0] not in ("/", "#", "@", "!"):
         try:
             from userbot.modules.sql_helper.pm_permit_sql import approve
@@ -291,7 +291,7 @@ async def unblockpm(unblock):
 
 CMD_HELP.update({
     "pmpermit": "\
-.approve\
+.pm\
 \nUsage: Approves the mentioned/replied person to PM.\
 \n\n.disapprove\
 \nUsage: Disapproves the mentioned/replied person to PM.\

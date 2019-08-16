@@ -1,7 +1,7 @@
 {
-  "name": "Paperplane Extended - Telegram Userbot",
-  "description": "A modular Telegram userbot running on Python 3.6+ with an sqlalchemy database.",
-  "logo": "https://i.imgur.com/ATSG4w3.png",
+  "name": "Telegram Userbot",
+  "description": "A Modular Telegram Userbot.",
+  "logo": "https://i.imgur.com/ZLi4nDP.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/AvinashReddy3108/PaperplaneExtended",
+  "repository": "https://github.com/noobvishal/Userbot",
   "website": "https://telegra.ph/How-to-host-a-Telegram-Userbot-07-24",
   "success_url": "https://t.me/PaperplaneExtended",
   "stack": "container",
@@ -52,7 +52,7 @@
     },
     "PM_AUTO_BAN": {
       "description": "PM Auto-Ban Feature Switch",
-      "value": "False"
+      "value": "TRUE"
     },
     "YOUTUBE_API_KEY": {
       "description": "YouTube Data API Key for .yt command. Get from https://console.cloud.google.com",

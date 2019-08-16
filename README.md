@@ -4,7 +4,7 @@
 
 #### The easiest way to deploy this bad boy !!
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AvinashReddy3108/PaperplaneExtended/tree/sql-extended)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/noobvishal/Userbot/tree/sql-extended)
 
     #include <std/disclaimer.h>
     /**
