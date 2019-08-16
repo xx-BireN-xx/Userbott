@@ -761,7 +761,7 @@ async def fuckedd (abusehard):
         await abusehard.edit(reply_text)
 
 
- @register(outgoing=True, pattern="^.rape$")
+@register(outgoing=True, pattern="^.rape$")
 async def raping (raped):
     """ -,- """
     if not raped.text[0].isalpha() and raped.text[0] not in ("/", "#", "@", "!"):
@@ -770,7 +770,7 @@ async def raping (raped):
         await raped.edit(reply_text)
 
 
- @register(outgoing=True, pattern="^.gey$")
+@register(outgoing=True, pattern="^.gey$")
 async def geys (geyed):
     """ :/ """
     if not geyed.text[0].isalpha() and geyed.text[0] not in ("/", "#", "@", "!"):
@@ -779,7 +779,7 @@ async def geys (geyed):
         await geyed.edit(reply_text)
 
 
- @register(outgoing=True, pattern="^.abuse$")
+@register(outgoing=True, pattern="^.abuse$")
 async def abusing (abused):
     """ Ez Abuse """
     if not abused.text[0].isalpha() and abused.text[0] not in ("/", "#", "@", "!"):
@@ -788,7 +788,7 @@ async def abusing (abused):
         await abused.edit(reply_text)
 
 
- @register(outgoing=True, pattern="^.rip$")
+@register(outgoing=True, pattern="^.rip$")
 async def restinpeace (rest):
     """  Ezio Auditore R.I.P """
     if not rest.text[0].isalpha() and rest.text[0] not in ("/", "#", "@", "!"):
