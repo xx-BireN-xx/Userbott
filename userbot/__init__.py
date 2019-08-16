@@ -130,6 +130,8 @@ G_DRIVE_AUTH_TOKEN_DATA = os.environ.get("G_DRIVE_AUTH_TOKEN_DATA", None)
 GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", None)
 TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./downloads")
 
+MAX_MESSAGE_SIZE_LIMIT = 4095
+
 # 'bot' variable
 if STRING_SESSION:
     # pylint: disable=invalid-name
