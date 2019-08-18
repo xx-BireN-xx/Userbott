@@ -109,12 +109,12 @@ async def bot_support(wannahelp):
 @register(outgoing=True, pattern="^.creator$")
 async def creator(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("Moi Creator iz @noobvishal")
+        await e.edit("Moi Creator iz @PsyFucx")
 
 @register(outgoing=True, pattern="^.readme$")
 async def reedme(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("You might want to have a look at the [README.md](https://github.com/noobvishal/Userbot/blob/sql-extended/README.md) file.")
+        await e.edit("You might want to have a look at the [README.md](https://github.com/xx-BireN-xx/Userbott/blob/sql-extended/README.md) file.")
 
 #
 # Copyright (c) Gegham Zakaryan | 2019
@@ -136,7 +136,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     if not wannasee.text[0].isalpha() and wannasee.text[0] not in ("/", "#", "@", "!"):
-        await wannasee.edit("Click [Here](https://github.com/noobvishal/Userbot) To Open My Userbot's GitHub page.")
+        await wannasee.edit("Click [Here](https://github.com/xx-BireN-xx/Userbott) To Open My Userbot's GitHub page.")
 
 CMD_HELP.update({
     'random': '.random <item1> <item2> ... <itemN>\
