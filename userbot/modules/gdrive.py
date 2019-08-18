@@ -149,7 +149,7 @@ async def download(dryb):
         # Sometimes API fails to retrieve starting URI, we wrap it.
         try:
             g_drive_link = await upload_file(http, required_file_name, file_name, mime_type, dryb)
-            await dryb.edit(f"File:`{required_file_name}`\nwas successfully uploaded to [Google Drive]({g_drive_link})!")
+            await dryb.edit(f"File:`{required_file_name}`\nwas successfully uploaded to [Sax Drive]({g_drive_link})!")
         except Exception as e:
             await dryb.edit(f"Error while uploading to Google Drive\nError Code:\n`{e}`")
 
@@ -233,7 +233,7 @@ async def upload_file(http, file_path, file_name, mime_type, event):
     media_body = MediaFileUpload(file_path, mimetype=mime_type, resumable=True)
     body = {
         "title": file_name,
-        "description": "Uploaded using PaperplaneExtended Userbot.",
+        "description": "Uploaded By BireN.",
         "mimeType": mime_type,
     }
     if parent_id:
